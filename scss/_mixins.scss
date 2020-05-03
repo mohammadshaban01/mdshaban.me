@@ -1,0 +1,63 @@
+/*-------------------------------------------------------------------------------------------*/
+ /* card  */
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+ /*-------------------------------------------------------------------------------------------*/
+ /* Border Radius */
+/*-------------------------------------------------------------------------------------------*/
+
+ 
+/*-------------------------------------------------------------------------------------------*/
+ /* Box shadow */
+/*-------------------------------------------------------------------------------------------*/
+// Tab active shadow
+@mixin box-shadow($top, $left, $blur, $size, $color) {
+	-webkit-box-shadow: $top $left $blur $size $color;
+	-moz-box-shadow: $top $left $blur $size $color;
+	box-shadow: $top $left $blur $size $color;
+}
+
+.tab-active {
+	@include box-shadow(2px,2px,5px,0, rgba(0,0,0,0.6));
+}
+.tab-li {
+	@include box-shadow(1px, 1px, 1px, 0, rgba(0,0,0,0.6));
+}
+
+
+
+
+
+@mixin text-shadow($top, $left, $blur, $size, $color) {
+	-webkit-box-shadow: $top $left $blur $size $color;
+	-moz-box-shadow: $top $left $blur $size $color;
+	box-shadow: $top $left $blur $size $color;
+}
+
+.text-shadow {
+	@include text-shadow(1px, 2px, 3px, 0, rgba(0,0,0,0.2));
+}
+
+.accordion-shadow {
+	@include box-shadow(1px, 1px, 1px, 0, rgba(0,0,0,0.6));
+}
+
+/*-------------------------------------------------------------------------------------------*/
+ /* Theme btn */
+/*-------------------------------------------------------------------------------------------*/
+@mixin button-bg($bg) {
+	background: $bg;
+
+	&:hover {
+	  background: transparent;
+	  border: 1px solid $black;
+	  
+	}
+
+}
+
+  .btn-green {
+	@include button-bg($black);
+ }

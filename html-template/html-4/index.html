@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Scss</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+        <!--Start Header Top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="county">
+                        <a href="tel:104578689">Help: +120345687</a>
+                        <div class="county-list">
+                            <div class="county-arrow">
+                                    <a href="#"><img src="images/icons/flags.jpg" width="25"> United States
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </a>                   
+                                <ul>
+                                    <li><i class="fa fa-caret-up" aria-hidden="true"></i></li>
+                                    <li><button><img src="images/icons/french_flag.jpg" alt="French" width="20">French</button></li>
+                                    <li><button><img src="images/icons/germany_flag.jpg" alt="Garmany" width="20">Garmany</button></li>
+                                    <li><button><img src="images/icons/italy_flag.jpg" alt="Itaily" width="20">Itaily</button></li>
+                                    <li class="p-b-5"><button><img src="images/icons/spain_flag.jpg" alt="Spain" width="20">Spain</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="profile">
+                        <div class="profile-list">
+                            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                            <button><i class="fa fa-bell" aria-hidden="true"></i></button>
+                            <button class="profile-img">
+                                <img src="images/icons/avatar-6.jpg" alt="Profile">
+                            </button>
+                            <button><span><h2>Donald Tdsdsdssdsd</h2></span></button>
+                        </div>
+                    </div>
+
+                    <div class="profile-arrow">
+                        <img src="images/icons/arrow-down.png" width="10">
+                        <ul>
+                            <li><button><i class="fa fa-user" aria-hidden="true"></i>Profile</button></li>
+                            <li><button><i class="fa fa-window-maximize" aria-hidden="true"></i> My Wallet</button></li>
+                            <li><button><i class="fa fa-cogs" aria-hidden="true"></i> Settings</button></li>
+                            <li><button><i class="fa fa-lock" aria-hidden="true"></i> Lock screen</button></li>
+                            <li><button><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+       <!--End Header Top -->
+
+       <!--Start Header Mid -->
+       <div class="header-mid">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-12">
+                        <div class="menu">
+                            <nav class="navbar navbar-expand-lg navbar-dark">
+                                <a class="navbar-brand" href="#">Dashboard</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-briefcase" aria-hidden="true"></i>User Interface
+                                        </a>
+                                        <div class="dropdown-menu nav-1" aria-labelledby="navbarDropdown">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Active</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Alerts</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Badge</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Tabs & Accordions</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Modals</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Images</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Popover & Tooltips</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Carousel</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Typography</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                            </div>
+                                        </div>
+                                        <!--  /.container  -->
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-arrows-alt" aria-hidden="true"></i>Components
+                                        </a>
+                                        <div class="dropdown-menu nav-2" aria-labelledby="navbarDropdown">
+                                
+                                
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Active</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Alerts</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Badge</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Tabs & Accordions</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Modals</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Images</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Popover & Tooltips</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Carousel</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Typography</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                            </div>
+                                        </div>
+                                        <!--  /.container  -->
+                                
+                                
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-hdd-o" aria-hidden="true"></i>Advanced UI
+                                        </a>
+                                        <div class="dropdown-menu nav-3" aria-labelledby="navbarDropdown">
+                                
+                                
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Active</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Alerts</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Badge</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Tabs & Accordions</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Modals</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Images</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Popover & Tooltips</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Carousel</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Typography</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                            </div>
+                                        </div>
+                                        <!--  /.container  -->
+                                
+                                
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-file-text" aria-hidden="true"></i> Pages
+                                        </a>
+                                        <div class="dropdown-menu nav-4" aria-labelledby="navbarDropdown">
+                                
+                                
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Active</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Alerts</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Badge</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Tabs & Accordions</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Modals</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Images</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                                <div class="col-md-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                        <button class="nav-link active">Popover & Tooltips</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Carousel</button>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <button class="nav-link">Typography</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- /.col-md-4  -->
+                                            </div>
+                                        </div>
+                                        <!--  /.container  -->
+                                
+                                
+                                        </div>
+                                    </li>
+                                    </ul>
+                                    <form class="search">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button  type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                                
+                                
+                            </nav>
+                        </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!--End Header Mid -->
+
+       <!--Start Header Footer -->
+       <div class="header-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Dashboard</h2>
+                    <h3>Dashboard</h3>
+                </div>
+                <div class="col-md-6 clearfix">
+                    <div class="settings">
+                        <h4><i class="fa fa-cog" aria-hidden="true"></i>Setting<i class="fa fa-sort-desc" aria-hidden="true"></i></h4>
+                        <ul>
+                            <li><button>Profile</button></li>
+                            <li><button>My Wallet</button></li>
+                            <li><button>Settings</button></li>
+                            <li><button>Lock screen</button></li>
+                            <li><button>Logout</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!--End Header Footer -->
+
+       <!-- Start Orders -->
+        <section class="m-t-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="graph clearfix">
+                                <div class="graph-list">
+                                    <img src="images/icons/profits.png" width="60">                                        
+                                </div>
+                                <div class="graph-list">
+                                    <div class="list">
+                                        <span>-25%</span>
+                                    </div>                                                   
+                                    <div>
+                                        <p>From previous period</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order">
+                                <div class="order-list clerfix">
+                                    <div class="order-inner">
+                                            <h3>Orders</h3>
+                                            <h4>1756</h4>
+                                            <p>Sed ut perspiciatis unde iste</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="graph clearfix">
+                                <div class="graph-list">
+                                    <img src="images/icons/profits.png" width="60">                                        
+                                </div>
+                                <div class="graph-list">
+                                    <div class="list">
+                                        <span>-25%</span>
+                                    </div>                                                   
+                                    <div>
+                                        <p>From previous period</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order">
+                                <div class="order-list clerfix">
+                                    <div class="order-inner">
+                                            <h3>Orders</h3>
+                                            <h4>1756</h4>
+                                            <p>Sed ut perspiciatis unde iste</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="graph clearfix">
+                                <div class="graph-list">
+                                    <img src="images/icons/profits.png" width="60">                                        
+                                </div>
+                                <div class="graph-list">
+                                    <div class="list">
+                                        <span>-25%</span>
+                                    </div>                                                   
+                                    <div>
+                                        <p>From previous period</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order">
+                                <div class="order-list clerfix">
+                                    <div class="order-inner">
+                                            <h3>Orders</h3>
+                                            <h4>1756</h4>
+                                            <p>Sed ut perspiciatis unde iste</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="graph clearfix">
+                                <div class="graph-list">
+                                    <img src="images/icons/profits.png" width="60">                                        
+                                </div>
+                                <div class="graph-list">
+                                    <div class="list">
+                                        <span>-25%</span>
+                                    </div>                                                   
+                                    <div>
+                                        <p>From previous period</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order">
+                                <div class="order-list clerfix">
+                                    <div class="order-inner">
+                                            <h3>Orders</h3>
+                                            <h4>1756</h4>
+                                            <p>Sed ut perspiciatis unde iste</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+       <!-- End Orders -->
+
+       <!--Start MONTHLY EARNING -->
+       <section class="mounth m-t-20">
+        <diV class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="mounth-earinng card">
+                        <h3>MONTHLY EARNING</h3>
+                        <img src="images/charts/sagacito-demo-2.png" alt="Bar Chart">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sales card">
+                        <h3>SALES ANALYTICS</h3>
+                        <div class="analytics">
+                            <div class="analytic-list"> <h3>5624</h3></div>
+                             <div class="analytic-list text-right"> <h3>3152</h3></div>
+                        </div>
+                        <img src="images/charts/sagacito-demo-3.png" alt="Bar Chart">
+                    </div>
+                </div>
+            </div>
+        </diV>
+       </section>
+       <!--End MONTHLY EARNING -->
+
+       <!--Start Weekly Sales -->
+       <section class="weekly-sales m-t-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                   <div class="card">
+                        <h3>WEEKLY SALES</h3>
+                        <img src="images/charts/sagacito-demo-4.png" alt="Demo Chart">
+                        <div class="week">
+                            <div class="week-list">
+                                <h4>145</h4>
+                                <h5>This Week</h5>
+                            </div>
+                            <div class="week-list">
+                                <h4>145</h4>
+                                <h5>This Week</h5>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="card m-t-20">
+                        <div class="computer">
+                            <h3><i class="fa fa-desktop" aria-hidden="true"></i>Computer</h3>
+                            <div class="mounth">
+                                <div class="mounth-list">
+                                    <h5>This Month Sales</h5>
+                                    <h4>$14,352</h4>
+                                    <h5>Top Cities Sales</h5>
+                                </div>
+                                <div class="mounth-list text-center">
+                                    <img src="images/charts/sagacito-demo-5.png">
+                                </div>
+                            </div>
+                            <div class="mounth p-t-7 p-b-10">
+                                <div class="mounth-list">
+                                   <h5> Los Angeles : <span>$ 8,235</span></h5>
+                                </div>
+                                <div class="mounth-list">
+                                    <h5> Los Angeles : <span>$ 8,235</span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <h3>LATEST MESSAGES</h3>
+                        <div class="week">
+                            <div class="week-list">
+                                <h4>12</h4>
+                                <h5>November</h5>
+                            </div>
+                            <div class="week-list">
+                                <h4>13</h4>
+                                <h5>November</h5>
+                            </div>
+                        </div>
+                        <div class="bt-bdr">
+                            <div class="arrow-up"></div>
+                        </div>
+
+                        <div class="messages">
+                            <div class="profile-img">
+                                <img src="images/messages/2.jpg">
+                            </div>
+                            <div class="messages-list">
+                                <h5>Michael Bowen</h5>
+                                <h6>Hey! there I'm available</h6>
+                                <p>Just Now</p>
+                            </div>
+                        </div>
+                        <div class="bt-bdr"></div>
+
+                        <div class="messages">
+                            <div class="profile-img">
+                                <img src="images/messages/3.jpg">
+                            </div>
+                            <div class="messages-list">
+                                <h5>Michael Bowen</h5>
+                                <h6>Hey! there I'm available</h6>
+                                <p>Just Now</p>
+                            </div>
+                        </div>
+                        <div class="bt-bdr"></div>
+
+                        <div class="messages">
+                            <div class="profile-img">
+                                <img src="images/messages/4.jpg">
+                            </div>
+                            <div class="messages-list">
+                                <h5>Michael Bowen</h5>
+                                <h6>Hey! there I'm available</h6>
+                                <p>Just Now</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <h3>RECENT ACTIVITY</h3>
+                        <div class="messages p-t-8">
+                            <div class="messages-list">
+                                <h6>14 Oct, 09:30am</h6>
+                                <h5>Meeting For a new Projects</h5>
+                                <p><button><i class="fa fa-trash" aria-hidden="true"></i></button></p>
+                            </div>
+                        </div>
+                        <div class="bt-bdr"></div>
+                        <div class="messages p-t-10">
+                            <div class="messages-list">
+                                <h6>14 Oct, 11:05am</h6>
+                                <h5>Start a new Projects</h5>
+                                <p><button><i class="fa fa-trash" aria-hidden="true"></i></button></p>
+                            </div>
+                        </div>
+                        <div class="bt-bdr"></div>
+                        <div class="messages p-t-8">
+                            <div class="messages-list">
+                                <h6>14 Oct, 11:05am</h6>
+                                <h5>Start a new Projects</h5>
+                                <p><button><i class="fa fa-trash" aria-hidden="true"></i></button></p>
+                            </div>
+                        </div>
+                        <div class="bt-bdr"></div>
+                        <div class="messages p-b-30 ">
+                            <div class="messages-list">
+                                <h6>14 Oct, 11:05am</h6>
+                                <h5>Start a new Projects</h5>
+                                <p><button><i class="fa fa-trash" aria-hidden="true"></i></button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+       <!--End Weekly Sales -->
+
+      <!-- Start latest transactions -->
+      <section class="latest-transaction m-t-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                   <div class="card">
+                       <h3>LATEST TRANSACTIONS</h3>
+                       <div class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <th>(#) Id </th>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Amount</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Peter</td>
+                                    <td>
+                                        <div class="profile-img">
+                                            <img src="images/messages/3.jpg">
+                                        </div>
+                                    <span>Rafael Reardon</span>
+                                    </td>
+                                    <td>14/10/2018</td>
+                                    <td>
+                                        <div class="status">
+                                            Delivered
+                                        </div>
+                                    </td>
+                                    <td>$100</td>
+                                    <td>$100</td>
+                                    <td>$100</td>
+                                    <td>
+                                        <button>Edit</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Lois</td>
+                                    <td>
+                                        <div class="profile-img">
+                                            <img src="images/messages/4.jpg">
+                                        </div>
+                                        <span>Thomas Hirsch</span>
+                                    </td>
+                                    <td>15/10/2018</td>
+                                    <td>
+                                        <div class="status status-warning">
+                                            Pending
+                                        </div>
+                                    </td>
+                                    <td>$60</td>
+                                    <td>$150</td>
+                                    <td>$150</td>
+                                    <td>
+                                        <button>Edit</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Joe</td>
+                                    <td>
+                                        <div class="profile-img">
+                                            <img src="images/messages/5.jpg">
+                                        </div>
+                                        <span>Archer Desaillly</span>
+                                    </td>
+                                    <td>16/10/2018</td>
+                                    <td>
+                                        <div class="status">
+                                            Delivered
+                                        </div>
+                                    </td>
+                                    <td>$50</td>
+                                    <td>Joe</td>
+                                    <td>$60</td>
+                                    <td>
+                                        <button>Edit</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cleveland</td>
+                                    <td>
+                                        <div class="profile-img">
+                                            <img src="images/messages/6.jpg">
+                                        </div>
+                                        <span>Michael Flannery</span>
+                                    </td>
+                                    <td>17/10/2018</td>
+                                    <td>
+                                        <div class="status">
+                                            Delivered
+                                        </div>
+                                    </td>
+                                    <td>$40</td>
+                                    <td>$250</td>
+                                    <td>$250</td>
+                                    <td>
+                                        <button>Edit</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cleveland</td>
+                                    <td>
+                                        <div class="profile-img">
+                                            <img src="images/messages/7.jpg">
+                                        </div>
+                                        <span>Jamie Fishbourne</span>
+                                    </td>
+                                    <td>18/10/2018</td>
+                                    <td>
+                                        <div class="status status-danger">
+                                        Cancel
+                                        </div>
+                                    </td>
+                                    <td>$90</td>
+                                    <td>$250</td>
+                                    <td>$250</td>
+                                    <td>
+                                        <button>Edit</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cleveland</td>
+                                    <td>
+                                        <div class="profile-img">
+                                            <img src="images/messages/8.jpg">
+                                        </div>
+                                        <span>Joe</span>
+                                    </td>
+                                    <td>19/10/2018</td>
+                                    <td>
+                                        <div class="status">
+                                            Delivered
+                                        </div>
+                                    </td>
+                                    <td>$80</td>
+                                    <td>$250</td>
+                                    <td>$250</td>
+                                    <td>
+                                        <button>Edit</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Start latest transactions -->
+
+      <footer class="m-t-20">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <p>© 2019 by Sagacito Technologies Pvt Ltd</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+</body>
+</html>

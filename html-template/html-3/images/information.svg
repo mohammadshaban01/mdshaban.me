@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<title>UI/Glyph/Primary Color 2/24px/Information</title>
+<desc>Created with Sketch.</desc>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="19.9645" y1="19.9645" x2="4.4274" y2="4.4274" gradientTransform="matrix(0 -1 -1 0 24 24)">
+	<stop  offset="0" style="stop-color:#FF5980"/>
+	<stop  offset="1" style="stop-color:#FFA882"/>
+</linearGradient>
+<path class="st0" d="M12,1C5.9,1,1,5.9,1,12s4.9,11,11,11s11-4.9,11-11S18.1,1,12,1z"/>
+</svg>

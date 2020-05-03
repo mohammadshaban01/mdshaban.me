@@ -1,0 +1,28 @@
+//
+// Base setting
+//
+
+
+$base-spacing:0.125rem; // Font size 2px 
+$base-font-size:0.25rem; // Font size 4px 
+$base-line-height:$base-spacing;
+
+// Font Size
+$font-weight-light:300;
+$font-weight-regular:400;
+$font-weight-medium:500;
+$font-weight-semi-bold:600; 
+$font-weight-bold:700;
+$font-weight-extra-bold:800;
+$font-weight-black:900;
+
+// Header Size
+$header-size-1: $base-font-size * 1.5;
+$header-size-2: $base-font-size * 0.875;
+$header-size-3: $base-font-size * 0.75;
+$header-size-4: $base-font-size * 1.5;
+$header-size-5: $base-font-size * 1.5;
+$header-size-6: $base-font-size * 1.5;
+
+
+

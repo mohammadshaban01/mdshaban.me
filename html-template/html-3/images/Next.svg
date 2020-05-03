@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Line / Next</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.37288753,8.24153288 C6.06075368,7.92146284 5.55247046,7.91921198 5.23760518,8.23650544 C4.9227399,8.5537989 4.92052564,9.07048411 5.2326595,9.39055414 L11.4426791,15.7584672 C11.7571942,16.0809791 12.2702131,16.0804408 12.5840726,15.7572697 L18.7685059,9.38935663 C19.0799891,9.0686323 19.0767256,8.55195285 18.7612167,8.23532076 C18.4457078,7.91868867 17.9374302,7.92200608 17.625947,8.2427304 L12.0116151,14.0236284 L6.37288753,8.24153288 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Line-/-Next" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Next" fill="#0A1F44" fill-rule="nonzero" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " xlink:href="#path-1"></use>
+        <g id="Color-/-Black-/-Black-800" mask="url(#mask-2)" fill="#182C4F">
+            <polygon id="Black-/-Black-800" points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+</svg>

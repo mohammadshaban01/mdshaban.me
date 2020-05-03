@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Line / Cancel</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.5655971,7.24582045 L11.9998499,10.8115677 L8.43410271,7.24582045 C8.10634211,6.91805985 7.5744815,6.91805985 7.24672089,7.24582045 C6.9177597,7.57358105 6.9177597,8.10664225 7.24672089,8.43440286 L10.8112675,12.0001501 L7.24672089,15.5658973 C6.9177597,15.8936579 6.9177597,16.4255185 7.24672089,16.7544797 C7.5744815,17.0822403 8.10634211,17.0822403 8.43410271,16.7544797 L11.9998499,13.1887325 L15.5655971,16.7544797 C15.8945583,17.0822403 16.4264189,17.0822403 16.7541795,16.7544797 C17.0819402,16.4255185 17.0819402,15.8936579 16.7541795,15.5658973 L13.1884323,12.0001501 L16.7541795,8.43440286 C17.0819402,8.10664225 17.0819402,7.57358105 16.7541795,7.24582045 C16.4264189,6.91805985 15.8945583,6.91805985 15.5655971,7.24582045 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Line-/-Cancel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Cancel" fill="#0A1F44" xlink:href="#path-1"></use>
+        <g id="Color-/-Black-/-Black-800" mask="url(#mask-2)" fill="#182C4F">
+            <polygon id="Black-/-Black-800" points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+</svg>

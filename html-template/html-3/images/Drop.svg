@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Line / Drop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7,10 L16.9986432,10 L12.9934922,13.4421878 C12.5777005,13.8173596 12.2463103,14.0049455 11.9993216,14.0049455 C11.7523329,14.0049455 11.4184593,13.8173596 10.9977009,13.4421878 L7,10 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Line-/-Drop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Drop" fill="#0A1F44" xlink:href="#path-1"></use>
+        <g id="Color-/-Black-/-Black-800" mask="url(#mask-2)" fill="#182C4F">
+            <polygon id="Black-/-Black-800" points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+</svg>

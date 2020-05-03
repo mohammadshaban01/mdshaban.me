@@ -1,0 +1,125 @@
+/*-------------------------------------------------------------------------------------------*/
+ /* card  */
+/*-------------------------------------------------------------------------------------------*/
+@mixin card($border-radius){
+
+	-webkit-border-radius: $border-radius;
+	-ms-border-radius: $border-radius;
+	-o-border-radius: $border-radius;
+	border-radius: $border-radius;
+ }
+
+ .card {
+	 background: $text-white;
+	 @include card (3px);
+ }
+
+
+
+ /*-------------------------------------------------------------------------------------------*/
+ /* Border Radius */
+/*-------------------------------------------------------------------------------------------*/
+@mixin border-radius ( $value: 4px ) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+  }
+
+.border-rd {
+	@include border-radius();
+}
+
+ 
+/*-------------------------------------------------------------------------------------------*/
+ /* Box shadow */
+/*-------------------------------------------------------------------------------------------*/
+@mixin box-shadow($top, $right, $bottom, $left, $color) {
+	-webkit-box-shadow:$top $right $bottom $left $color;
+	-ms-box-shadow:$top $right $bottom $left $color;
+	-o-box-shadow:$top $right $bottom $left $color;
+	box-shadow:$top $right $bottom $left $color;
+	
+}
+
+.login-shadow {
+	@include box-shadow(0px, 4px, 30px, 0px, $login-shadow);
+}
+
+.home-card-shadow {
+	@include box-shadow(3px, 5px, 30px, -5px, $home-shadow);
+}
+
+.topbar-shadow {
+	@include box-shadow(0, 2px, 10px, 0, $topbar-shadow);
+}
+
+.profile-shadow {
+	@include box-shadow(0, 2px, 5px, 0, $text-secondary);
+}
+
+.login-btn-shadow {
+	@include box-shadow(5px, 4px, 11px, 1px, $login-btn-shadow);
+}
+
+.side-bar-shadow {
+	@include box-shadow(-2px, 10px, 10px, 1px, $text-dark);
+}
+
+.select-shadow {
+	@include box-shadow(3px, 4px, 10px, -6px, $home-shadow);
+}
+
+/*-------------------------------------------------------------------------------------------*/
+ /* Theme btn */
+/*-------------------------------------------------------------------------------------------*/
+@mixin button-bg($bg) {
+	background: $bg;
+
+	&:hover {
+		background:darken($bg,8%);
+		transition: all 0.3s ease;
+	}
+
+	&:active {
+	background:darken($bg,25%);
+
+	} 
+  }
+  
+.btn {
+    color:white;
+    padding:5px 10px;
+    border-radius:4px;
+    font-size:1rem;
+
+    &:focus {
+	outline: none!important;
+	box-shadow: none!important;
+   	}
+	
+  }
+
+  /*Theme btn color*/
+  .btn-green {
+	@include button-bg(#f80368);
+ }
+ 
+ .btn-blue {
+	@include button-bg(#3498db);
+ }
+ 
+ .btn-yellow{
+	@include button-bg(#f1c40f);
+ }
+ 
+ .btn-red {
+	@include button-bg(#e74c3c);
+ }
+ 
+button {
+   background: transparent;
+
+   &:focus {
+	   outline: none;
+   }
+}

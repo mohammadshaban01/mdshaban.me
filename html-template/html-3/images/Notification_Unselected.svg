@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Line / Notification_Unselected</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.898601,16.9836806 L17.6342754,15.1171538 L17.6342754,10.0735794 C17.6342754,7.27109462 15.5310879,4.95410438 12.7968757,4.5721311 L12.7968757,3.78595327 C12.7968757,3.35188251 12.4401602,3 12.0001276,3 C11.5600949,3 11.2033794,3.35188251 11.2033794,3.78595327 L11.2033794,4.5721311 C8.46916727,4.95410438 6.36597971,7.27109462 6.36597971,10.0735794 L6.36597971,15.1173784 L5.10165417,16.9839051 C4.96461348,17.2271015 4.96620698,17.5255392 5.10597937,17.7673882 C5.24575177,18.0092373 5.50162176,18.1578947 5.77911776,18.1578947 L18.2211374,18.1578947 C18.4986334,18.1578947 18.754731,18.0092373 18.8942758,17.7673882 C19.0335929,17.5255392 19.035414,17.2271015 18.898601,16.9836806 Z M12.0320591,21 C13.2615715,21 14,19.9543243 14,18.1578947 L10,18.1578947 C10,19.9141313 10.8025467,21 12.0320591,21 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Line-/-Notification_Unselected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Notification-unselected" stroke="#0A1F44" xlink:href="#path-1"></use>
+        <g id="Color-/-Black-/-Black-800-/-Outline" mask="url(#mask-2)" stroke="#182C4F">
+            <polygon id="Black-/-Black-800" points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+</svg>

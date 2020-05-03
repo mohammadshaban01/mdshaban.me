@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Solid / Add with Circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M11,11 L11,6.85714286 C11,6.38375593 11.4477153,6 12,6 C12.5522847,6 13,6.38375593 13,6.85714286 L13,11 L17.1428571,11 C17.6162441,11 18,11.4477153 18,12 C18,12.5522847 17.6162441,13 17.1428571,13 L13,13 L13,17.1428571 C13,17.6162441 12.5522847,18 12,18 C11.4477153,18 11,17.6162441 11,17.1428571 L11,13 L6.85714286,13 C6.38375593,13 6,12.5522847 6,12 C6,11.4477153 6.38375593,11 6.85714286,11 L11,11 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Solid-/-Add-with-Circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="add-with-circle" fill="#0A1F44" xlink:href="#path-1"></use>
+        <g id="Color-/-Black-/-Black-800" mask="url(#mask-2)" fill="#182C4F">
+            <polygon id="Black-/-Black-800" points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+</svg>

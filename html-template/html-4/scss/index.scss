@@ -1,0 +1,374 @@
+@import '_variables.scss';
+@import '_gradients.scss';
+@import 'base/base';
+@import 'base/mixin';
+
+
+/*******************************************
+    Orders
+*******************************************/
+.card {
+
+    .card-body {
+        padding: 0;
+
+        .graph {
+            background: $them-color2;
+            display: flex;
+            padding: $base-size*5 $base-size*5 $base-size*20 $base-size*5;
+            border-radius: $base-size*2 $base-size*2 0 0;
+
+            .graph-list {
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-basis: 135px;
+
+                .list {
+                    width: $base-size*30;
+                    float: right;
+                    background: $white;
+                    font-size: $base-size*6;
+                    text-align: center;
+                    margin: $base-size*3 auto;
+                    padding: $base-size*2;
+                    border-radius: $base-size*2;
+                }
+
+                p {
+                    font-size: $base-size*6;
+                    color: $white;
+                    float: right;
+                    margin: 0;
+                }
+            }
+        }
+        .order {
+            min-height:$base-size*42;
+            position: relative;
+
+            .order-list {
+                width: 90%;
+                background: $white;
+                border-radius: $base-size*2;
+                @include box-shadow($base-size*1, 0px, $base-size*5, 0 rgb(185, 185, 185));    
+                position: absolute;
+                left: 17px;
+                top: $base-size*-13;
+                display: flex;
+
+                .order-inner {
+                    flex: 1;
+                    line-height: $base-size*15;
+                    padding: $base-size*4 $base-size*8 $base-size*4 $base-size*8;
+
+                    h3 {
+                        font-size: $base-size*12;
+                        color: black;
+                        display: inline-block;
+                    }
+
+                    h4 {
+                        font-size: $base-size*12;
+                        color: black;
+                        display: inline-block;
+                        float: right;
+                    }
+
+                    p {
+                        font-size: $base-size*8;
+                        margin: 0;
+                        padding: $base-size*8 $base-size*0 $base-size*0 $base-size*0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**************************************
+    mounth
+/*************************************/
+.mounth {
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    h3 {
+        font-size: $base-size*8;
+        font-weight: 600;
+        color: black;
+        padding: $base-size*7 $base-size*7 $base-size*7 $base-size*7;
+    }
+
+    .analytics {
+        display: flex;
+        margin: $base-size*0 0  $base-size*2 0;
+
+        .analytic-list {
+            flex: 1;
+
+            h3 {
+                font-size: $base-size*12;
+            }
+        }
+    }
+}
+
+/***********************************
+    Weekly Sales
+***********************************/
+.weekly-sales {
+    
+    h3 {
+        font-size: $base-size*8;
+        font-weight: 600;
+        color: black;
+        padding: $base-size*5 $base-size*7 $base-size*4 $base-size*7;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .week {
+        display: flex;
+    }
+
+    .week-list {
+        flex: 1;
+        text-align: center;
+
+        h4 {
+            color: black;
+            font-size: $base-size*12;
+        }
+
+        h5 {
+            font-size: $base-size*8;
+            color: $text-muted;
+            padding:$base-size*3 0 $base-size*6 0
+        }
+    }
+
+    .bt-bdr {
+        border-bottom: 1px solid #ccc;
+        padding: $base-size*2;
+        margin: $base-size*0 $base-size*7 $base-size*7 $base-size*7 ;
+        position: relative;
+
+        .arrow-up {
+            width: 0px;
+            height: 0;
+            border-left: $base-size*5 solid transparent;
+            border-right: $base-size*5 solid transparent;
+            border-bottom: $base-size*5 solid #ccc;
+            position: absolute;
+            left: $base-size*38;
+            top: $base-size*-1;
+          }          
+    }
+
+    .messages {
+        display: flex;
+
+        .messages-list {
+            flex: 1;            
+
+            h5 {
+                font-size: $base-size*10;
+                color: black;
+                padding: $base-size*4 0 0 $base-size*7;
+                position: relative;
+            }
+
+            h6 {
+                width: $base-size*75;
+                font-size: $base-size*7;
+                color: black;
+                padding: $base-size*6 0 0 $base-size*7;
+                white-space: nowrap; 
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            p {
+                font-size: $base-size*7;
+                color: $text-muted;
+                position: absolute;
+                right: $base-size*10;
+                margin-top: $base-size*-25;
+            }
+
+            button {
+                cursor: pointer;
+
+                i {
+                    font-size: $base-size*11;
+                    color: $them-color2;
+                    line-height: $base-size*22;
+                }
+            }
+        }
+
+        .profile-img {
+            width: $base-size*30;
+            height: $base-size*30;
+            margin: $base-size*5 0 $base-size*4 $base-size*10;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            border: $base-size*1 solid #e4e4e4;
+
+            img {
+                width: auto;
+                height: 100%;
+                display: inline;
+                margin: 0 auto;
+
+            }
+        }
+    }
+    
+    .computer {
+
+        h3 {
+
+          i {
+            font-size: $base-size*10;
+            padding: 0 $base-size*8 0 0;
+            color: $them-color2
+          }
+        }
+        
+        .mounth {
+            display: flex;
+            
+            .mounth-list {
+                flex: 1;
+                text-align: left;
+
+                h4 {
+                    color: black;
+                    font-size: $base-size*12;
+                    padding:$base-size*4 $base-size*0 $base-size*0 $base-size*7;
+                }
+
+                h5 {
+                    font-size: $base-size*8;
+                    color: $text-muted;
+                    padding:$base-size*5 $base-size*0 $base-size*0 $base-size*7;
+
+                    span {
+                        font-weight: 600;
+                        color: black;
+                    }
+                }
+
+                img {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+/************************************
+    latest transactions
+************************************/
+.latest-transaction {
+
+    h3 {
+        font-size: $base-size*8;
+        font-weight: 600;
+        color: black;
+        padding: 0.625rem 0.875rem 0.5rem 0.875rem;
+    }
+
+    table {
+        font-size: $base-size*8;
+
+        tr {
+
+            &:first-child  {
+                background: transparent;
+                font-weight: 600;
+            }
+            &:first-child:hover  {
+                background: transparent;
+            }
+            &:hover {
+                background: rgb(238, 238, 238);
+            }
+
+            .profile-img {
+                width: $base-size*15;
+                height: $base-size*15;
+                // margin: $base-size*5 0 $base-size*4 $base-size*10;
+                text-align: left;
+                position: absolute;
+                left: $base-size*-20;
+                top: $base-size*5;
+                overflow: hidden;
+                border-radius: 50%;
+                display: inline-block;
+    
+                img {
+                    width: auto;
+                    height: 100%;
+                    display: inline;
+                    margin: 0 auto;
+    
+                }
+            }
+
+            td {
+                position: relative;
+
+                .status {
+                    width: $base-size*30;
+                    padding: $base-size*1   ;
+                    background: $text-success;
+                    border-radius: $base-size*2;
+                    font-size: $base-size*6;
+                    color: $white;
+                    text-align: center;
+                }
+
+                .status-warning {
+                    background: $text-warning;
+                }
+                .status-danger {
+                    background: $text-danger;
+                }
+
+
+                button {
+                    background: $them-color2;
+                    font-size: $base-size*6;
+                    color: $white;
+                    padding: $base-size*3;
+                    border-radius: $base-size*2;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/**********************************
+    footer
+**********************************/
+footer {
+    background: $white;
+    font-size: $base-size*8;
+    text-align: center;
+
+    p {        
+        line-height: $base-size*30;
+        margin-bottom: 0;
+    }
+}

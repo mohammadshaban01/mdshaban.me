@@ -1,0 +1,855 @@
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"); */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '_variables.scss';
+@import '_gradients.scss';
+@import '_mixins.scss';
+@import 'base/base';
+
+/*-------------------------------------------------------------------------------------------
+  CSS definations for 
+-------------------------------------------------------------------------------------------*/
+
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	    -ms-box-sizing:border-box;
+	     -o-box-sizing:border-box;
+			box-sizing:border-box;
+}
+
+/*-------------------------------------------------------------------------------------------
+  CSS Padding & Margin 1 to 100px Top, Bottom, Left, Right 
+-------------------------------------------------------------------------------------------*/
+$spaceamounts: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100);
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+
+ @each $side in $sides {
+
+   .m-#{str-slice($side, 0, 1)}-#{$space} {
+
+	 margin-#{$side}: #{$space}px !important;
+	 
+   }
+   
+   .p-#{str-slice($side, 0, 1)}-#{$space} {
+
+	 padding-#{$side}: #{$space}px !important;
+	 
+   }
+
+ }
+
+ .m-#{$space} {
+
+	 margin: #{$space}px !important;
+	 
+   }
+
+ .p-#{$space} {
+	 
+   padding: #{$space}px !important;
+
+ }
+
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	&:hover {
+		outline:none;
+		text-decoration:none;
+	}
+	&:focus {
+		outline:none;
+		text-decoration:none;
+	}
+}
+
+/* Padding left & right None */
+.p-r-0 {
+	padding-right:0;
+}
+.p-l-0 {
+	padding-left:0;
+}
+
+/* Margin left & right None */
+.m-r-0 {
+	margin-right:0;
+}
+.m-l-0 {
+	margin-left:0;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* SITE STRUCTURE & APPEARANCE */
+/*-------------------------------------------------------------------------------------------*/
+html {
+	font-size: 1rem;
+}
+
+ body {
+	 // Background Color
+	background: $bg-color;
+
+	// font-family
+	font-family: 'Open Sans', sans-serif;
+	
+	// Body font color
+	color: $body-font-color; 
+
+	// Body font size
+	font-size: 1rem;
+
+	// Body Line height
+    line-height: $base-line-height;
+ }
+
+/*-------------------------------------------------------------------------------------------*/
+ /* Heading font (<h1> to <h6>) default font size */
+/*-------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6, 
+{	
+	// Set heading font weight
+	font-weight: $font-weight-semi-bold;
+	margin-bottom:0;
+	
+}
+
+
+h1 { font-size: $header-size-1; }	
+h2 { font-size: $header-size-2; }	
+h3 { font-size: $header-size-3; }	
+h4 { font-size: $header-size-4; }	
+h5 { font-size: $header-size-5; }	
+h6 { font-size: $header-size-6; }			
+
+/*-------------------------------------------------------------------------------------------*/
+/* Custom Checkboxes */
+/*-------------------------------------------------------------------------------------------*/
+
+
+// wrapper
+.wrapper1 {
+	margin: 0px 0px 0 60px;
+}
+
+//* Top bar *//
+.top-bar {
+	background: $text-white;
+	height: 65px;
+	position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
+	z-index:4;
+	@include box-shadow(0, 2px, 10px, 0, $topbar-shadow);
+
+	button {
+		cursor: pointer;
+	}
+
+	.logo {
+		position: absolute;
+		left: 65px;
+		top: 14px;
+
+		img {
+			width: 70%;
+		}
+	}
+
+	.profile-main {
+		width: 50%;
+		position: absolute;
+		right: 0;
+
+		.nav-bar-icon {
+			position: absolute;
+			top: 20px;
+    		right: 285px;
+
+			button {
+				margin: 0px 10px 0 10px;
+			}
+		}
+
+		.top-nav {
+			position: absolute;
+			top: 18px;
+			right: 248px;
+
+			.profile {
+				width: 30px;
+				height: 30px;
+				margin: 0px 0 0 10px;
+				text-align: left;
+				position: relative;
+				overflow: hidden;
+				border-radius: 50%;
+			
+				img {
+					width: auto;
+					height: 100%;
+					display: inline;
+					margin: 0 auto;
+				}
+				
+			}
+		}
+
+		.profile-email {
+			width: 25%;
+			position: absolute;
+			right:48px;
+			top: 20px;
+
+			.email {
+				font-size: 0.875rem;
+				white-space: nowrap; 
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.arrow-down {
+				width: 0; 
+				height: 0; 
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 5px solid $black;
+				position: absolute;
+				top: 8px;
+				left: 196px;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+// Login page
+.login-main {
+    width: 100%;
+    margin: 0 0 0 -35px;
+    position: relative;
+
+    .login-inner {
+        width: 50%;
+        background: #fff;
+		border-radius: 4px;
+		padding: 20px;
+        margin: 0 auto;
+        display: table;
+        position: relative;
+        top: 88px;
+        left: 0px;
+        @include box-shadow(0px, 4px, 30px, 0px, $login-shadow);
+
+	}
+	.login-logo {
+		text-align: center;
+		margin: 20px 0 0 0;
+	}
+
+        
+}
+
+
+
+/*left side bar toggle*/
+.side-bar {
+
+	.message {
+		background:#fff;
+		color:#FFF;
+		position: absolute;
+		top: 0px;
+		left: -325px;
+		width: 280px;
+		height: 100vh;
+		transition: left 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+		overflow: hidden;
+		box-sizing: border-box;
+		z-index: 3;	
+		@include box-shadow(0, 0, 12px, 0, $text-muted);
+
+		.side-bar-list {
+			margin-top: 68px;
+		}
+
+	}
+
+	#toggle {
+		position:absolute;
+		appearance:none;
+		cursor:pointer;
+		left:-100%;
+		top:-100%;
+
+	}
+
+	#toggle + label {
+		position:fixed;
+		left: -13px;
+		top: -3px;
+		cursor:pointer;
+		padding:10px;
+		color: #f1076b;
+		width: 100px;
+		border-radius: 3px;
+		padding: 8px 10px;
+		line-height:50px;
+		font-size:12px;
+		text-align:center;
+		-webkit-font-smoothing: antialiased;
+		cursor: pointer;
+		margin:0px 0px;
+		transition:all 500ms ease;
+		z-index: 5;
+
+	}
+
+	#toggle + label i.fa.fa-bars { 
+		font-size: 2em;
+
+	}
+
+	#toggle:checked ~ .message {
+		left: 0px;
+
+	} 
+
+	#toggle:checked ~ .container {
+		margin-top: 250px;
+
+	} 
+
+	#toggle:checked + label {
+		color:#000;
+		
+	}	
+
+	.side-bar-list {
+		.client-branding {
+			background: $bg-white;
+			line-height: 40px;
+
+			
+			li:nth-child(1) {
+				
+				button {
+					width: 100%;
+					text-align: left;
+					background: $list-btn1;
+					font-size: 1.25rem;
+					color: $abp-ft-color;
+					font-weight: $font-weight-light;
+
+					img {
+						width: 24px;
+						height: 24px;
+						padding: 2px 0px 0px 1px;
+						background-color: $white;
+						border: solid 1px $danger;
+						border-radius: 50%;
+						margin-right: 25px;
+					}	
+				}
+			}
+
+			li:nth-child(3) {
+				position: relative;
+				
+				button {
+					background: transparent;
+
+					img {
+						position: absolute;
+						top: 3px;
+					}
+				}
+			}
+
+			
+			li:nth-child(4) {
+				
+				button {
+					width: 100%;
+					margin-top: 2px;
+					text-align: left;
+					@include gradient ( transparentize($theme-gradient1, 0.7), transparentize($theme-gradient2, 0.7));
+					border-left: 2px solid $theme-gradient1;
+				}
+			}
+
+			button {
+				padding:4px 0 4px 26px;
+				color: $text-dark;
+			}
+		}
+
+		.your-products {
+			.mat-form-field {
+				width: 85%;
+				margin:0 0 -10px 20px;
+
+			}
+
+			.mat-input-placeholder {
+				font-size: 12px;
+			}
+
+			.mat-form-field-wrapper {
+				padding-bottom: 7px;
+			}
+
+			.mat-form-field-infix {
+				padding: 10px 0 0 0;
+    			margin: 10px 0 0 0;
+
+				img {
+					position: absolute;
+					right: 0px;
+					top: -5px;
+				}
+			}
+
+			h2 {
+				padding:0 0 0 20px;
+				margin: 0px 0 10px 0;
+			}
+
+			h3 {
+				@include gradient ( transparentize($theme-gradient1, 0.7), transparentize($theme-gradient2, 0.7));
+				padding: 0 0 0 25px;
+				line-height: 40px;
+				border-left: 2px solid $theme-gradient1;
+			}
+
+			h4 {
+				padding: 0 0 0 25px;
+				line-height: 40px;
+			}	
+		}
+	}
+
+	.logout {
+
+		.rating {
+			width: 100%;
+			background: $bg-bar-color;
+			position: absolute;
+			bottom: 0px;
+			line-height: 44px;
+
+			img {
+				width: 25px;
+				height:25px;
+				border-radius: 50%;
+				background: $assets-icon-bg;
+				margin: 5px 0 5px 24px;
+			}
+		}
+	}
+}
+  
+.select-main {
+	display: inline-block;
+	position: relative;
+
+	&:after {
+		content: '';
+		width: 30px;
+		height: 30px;
+		background-image: url("../images/drop-down.svg");
+		background-size: cover;
+		position: absolute;
+		pointer-events: none;
+		top: 5px;
+		right: 8px;
+	}
+
+	select {
+		width: 258px;
+		padding: 10px;
+		font-size: 0.875rem;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		-ms-word-break: normal;
+		word-break: normal;       
+		outline: none;
+		@include border-radius();
+		@include box-shadow(3px, 4px, 10px, -6px, $home-shadow);   
+	}
+}
+
+// Filter bar
+.filter-bar {
+    width: 100%;
+    margin:0 0 0 20px;
+
+    .filter-list {
+        width: 40px;
+        float:right;
+
+        button {
+            cursor: pointer;
+        }
+    }
+}
+
+
+.rating-configurator {
+
+    h1 {
+        padding: 0 0 0 15px;
+        line-height: 34px;
+    }
+
+    .arrow-img {
+        line-height: 30px;
+        text-align: right;
+        padding: 0 15px 0 0;
+    }
+
+    .border-line {
+        width: 96%;
+        margin: 1.5px auto;
+        border-bottom: 2px solid #eeeeee;
+    }
+    
+    button {
+        cursor: pointer;
+    }
+}
+
+.organisation {
+    display: flex;
+    padding: 10px 0 10px 15px;
+
+    .organisation-list {
+        flex: 2;    
+
+        h4 {
+            font-size:$font-12;
+            font-weight: $font-weight-light;
+        }
+    }
+}
+
+// Rating Table
+.rating-table {
+
+    table {
+        width: 100%;
+        font-size: $font-12;
+        margin: 0;
+
+        thead {
+            
+            tr:nth-child(1) {
+                border-bottom: 2px solid $table-border-color;
+            }        
+        }
+
+        th {
+            border: none;
+            font-weight: bold;
+        }
+       
+    }
+}
+
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+
+.home {
+  position: relative;
+
+    .card {
+        width: 100%;
+        height: 60vh;
+		display: table;
+		top: 45%;
+
+        .rating-configurator {
+            display: block;
+			text-align: center;
+			margin: 20px auto;
+        }
+
+        h2 {
+            color: $h-c-f;
+            font-weight: bold;
+            // display: table-cell;
+            // vertical-align: middle;
+			text-align: center;
+			padding: 20px 0px 0px 0px;
+        }
+
+        p {
+            color: $h-c-p;
+            font-size:0.75rem;
+            padding: 20px 40px 10px 40px;
+            margin: auto;
+            text-align: center;       
+            line-height: 20px; 
+        }
+    }
+}
+
+// Card Active
+.card-active {
+    @include box-shadow(3px, 5px, 30px, -5px, $home-shadow);
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Left List Bar */
+/*-------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 769px) {
+.left-bar {
+	width: 70px;
+	background: $bg-white;
+	height: 100vh;
+	position: fixed;
+	top:65px;
+	left:0;
+	z-index: 2;
+	@include box-shadow(0, 0, 12px, 0, $text-muted);
+	
+	.left-list {				
+		width: 100%;
+		position: absolute;
+		top: 0;
+
+		button {
+			width: 100%;			
+			line-height: 48px;
+			margin: 0 auto;
+			display: table;
+			cursor: pointer;
+
+			&:nth-child(1) {
+				background: $list-btn1;
+
+				img {
+					width: 24px;
+					height: 24px;
+					padding: 2px 0px 0px 1px;
+					background-color: $white;
+					border: solid 1px $danger;
+					border-radius: 50%;
+				}
+			}
+
+			&:nth-child(2) {
+				border-bottom: 1px solid $black;
+			}
+
+			&:nth-child(4) {
+				@include gradient ( transparentize($theme-gradient1, 0.7), transparentize($theme-gradient2, 0.7));
+				border-left: 2px solid $theme-gradient1;
+			}
+
+		}
+	}
+
+	.product-gallery {
+		width: 100%;
+		background: $list-btn1;
+		position: absolute;
+		bottom: 65px;
+		left: 0px;
+		line-height: 40px;
+
+		button {
+			width: 100%;
+			cursor: pointer;
+		}
+	}
+}
+	
+}
+
+@media screen and (min-width: 992px) {
+.wrapper2 {
+	margin-left:280px;
+	transition:margin-left 0.4s ease-in-out;
+	
+}
+}
+
+/*/////////////////////////////////
+  Responsive  MEDIAQUERIES CSS
+/////////////////////////////////*/
+
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 297px) and (max-width:  768px) { 
+html body {
+	font-size: 12px;
+}
+
+.wrapper1 {
+	margin: 85px 0 0 0;
+}
+
+.profile-main {
+	display: none;
+}
+
+//* Login page media css Start *//
+.login-main {
+	margin: 0 0 0 0px!important;
+
+	.login-inner {
+		width: 90%!important;
+		top: 0!important;
+	}
+
+	.forgot-pass {
+
+		.keep-sign {
+
+			h5 {
+				text-align: right;
+				padding: 0 5px 0 0;
+				font-size: 0.6rem;
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+//* Login page media css End *//
+
+//* Laft bar None Start *//
+.left-bar {
+	display: none;
+}
+
+ }
+
+ //* Laft bar None End *//
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+html body {
+	font-size: 12px;
+}
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+html body {
+	font-size: 12px;
+}
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 1024px) and (max-width: 1199px) { 
+html body {
+	font-size: 12px;
+}
+
+.top-bar .profile-main {
+	width: 63%;
+	}
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 1100px) and (max-width: 1220px) { 
+html body {
+	font-size: 12px;
+}
+
+.top-bar .profile-main {
+    width: 63%;
+ }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1220px) and (max-width: 1280px) { 
+html body {
+	font-size: 12px;
+}
+
+.top-bar .profile-main {
+    width: 60%;
+ }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1600px) and (max-width: 2560px) { 
+	html body {
+		font-size: 12px;
+	}
+	
+	.top-bar .profile-main {
+		width: 30%;
+	 }
+	
+	}

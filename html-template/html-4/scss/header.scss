@@ -1,0 +1,584 @@
+@import '_variables.scss';
+@import '_gradients.scss';
+@import 'base/base';
+@import 'base/mixin';
+
+h1 {
+	/* (2.5rem = 40px) */
+	color: $text-primary;
+	margin-bottom:0;
+	font-size: $base-size*32;
+
+}
+h2 {
+	color: $white;
+}
+
+a {
+	font-size: $base-size*7;
+
+	&:hover {
+	}
+}
+
+/********************************
+	Header Top
+********************************/
+.header-top {
+	background: $them-color;
+	min-height: $base-size*24;
+
+	.county {
+		display: flex;
+
+		a {
+			font-size: $base-size*6;
+			color: $white;
+			line-height: $base-size*22;
+			margin: 0 $base-size*25  0 0;
+		}
+
+		.county-list {
+			flex: 1;
+
+			.county-arrow {
+				width: 40%;
+				height: 0;
+				position: relative;
+				top: $base-size*-4;
+				left:$base-size*20;
+
+				> ul {
+					width: 100%;
+					visibility: hidden;
+					opacity: 0;
+					transition: visibility 0s, opacity 0.5s linear;
+					background: $white;
+					border-radius: $base-size*3;
+					@include box-shadow($base-size*1, 0px, $base-size*5, 0 rgb(185, 185, 185));
+					position: absolute;
+					left: $base-size*-28;
+					top: $base-size*23;
+					z-index: 2;
+
+					li {
+						line-height: $base-size*12;
+
+						i {
+							position: absolute;
+							top:$base-size*-11;
+							right: $base-size*13;
+							color: $white;
+						}
+
+						button {
+							color: black;
+							font-size: $base-size*6;
+							margin: 0 0 0 $base-size*4;
+
+							img {
+								margin: 0 $base-size*4 0 0;
+							}
+						}
+						
+						&:hover {
+							background: $hover;
+						}
+					}
+				}
+		
+				&:hover > ul {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	
+}
+
+
+
+/********************************
+	Profile Top
+********************************/
+.profile {
+	display: flex;
+	position: absolute;
+    right: $base-size*7;
+
+	.profile-list {
+		flex: 1;
+		line-height: $base-size*4;
+		padding: 0 $base-size*8 0 0;
+		
+		button {
+			cursor: pointer;
+
+			i {
+				font-size: $base-size*6;
+				padding: 0 $base-size*3 0 $base-size*4;
+				color: $white;
+			}
+
+			span {
+				h2 {
+				width:$base-size*30;
+				font-size: $base-size*6;
+				color: $white;
+				white-space: nowrap; 
+				overflow: hidden;
+				text-overflow: ellipsis;
+				}
+			}
+		}
+
+		.profile-img {
+			width: $base-size*20;
+			height: $base-size*20;
+			margin: $base-size*2 0 0 0;
+			text-align: left;
+			position: relative;
+			overflow: hidden;
+			border-radius: 50%;
+			border: $base-size*1 solid $hover;
+
+			img {
+				width: auto;
+				height: 100%;
+				display: inline;
+				margin: 0 auto;
+			}
+		}
+	
+	}
+}
+
+.profile-arrow {
+	width: 100%;
+	height: 0;
+	position: absolute;
+
+	img {
+		font-size: $base-size*8;
+		color: $white;
+		position: absolute;
+		right: $base-size*14;
+		top: $base-size*12;
+		cursor: pointer;
+	}
+
+	> ul {
+		width: 35%;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s, opacity 0.5s linear;
+		background: $white;
+		border-radius: $base-size*3;
+		@include box-shadow($base-size*1, 0px, $base-size*5, 0 rgb(185, 185, 185));
+		position: absolute;
+		top: $base-size*20;
+		right: $base-size*11;
+		z-index: 2;
+
+		::after {
+			content: '\f0de';
+			font-family: FontAwesome;
+			font-size: $base-size*12;
+			position: absolute;
+			top: $base-size*-5;
+			right: $base-size*2;
+			color: $white;
+			
+		}
+
+		li {		
+			line-height: $base-size*16;
+
+			button {
+				width: 100%;
+				font-size: $base-size*8;	
+				text-align: left;
+
+				i {
+					color: black;
+					padding: 0 $base-size*10 0 $base-size*7;
+				}
+
+				&:hover {
+					background: $hover;
+				}
+			}
+		}
+	  }
+
+	  &:hover > ul {
+		visibility: visible;
+		opacity: 1;
+	  }
+}
+
+/********************************
+	Header Mid
+********************************/
+.header-mid {
+	background: $them-color2;
+ 
+	.navbar {
+
+		.dropdown-menu {
+			border:none;
+			background-color:#0060c8!important;
+		}
+
+		.dropdown-menu.nav-1 {
+			background: $white!important;
+			width: 40%;
+			position: absolute;
+			top: $base-size*20;
+			left: 16%;
+			margin-left: $base-size*-2;
+			
+			button {
+				color: #000;
+				font-size: $base-size*7;
+				text-align: left;
+			}
+		
+			&::after {
+				content: "\f0de";
+				width: $base-size*10;
+				height: $base-size*10;
+				font-family: FontAwesome;
+				position: absolute;
+				top:$base-size*-10;
+				left: $base-size*4;
+				color: $white;
+				font-size: $base-size*16;
+			}
+		}
+
+		.dropdown-menu.nav-2{
+			background: $white!important;
+			width: 44%;
+			position: absolute;
+			top: $base-size*20;
+			left: 32%;
+			margin-left: $base-size*-2;
+			
+			button {
+				color: #000;
+				font-size: $base-size*7;
+				text-align: left;
+			}
+		
+			&::after {
+				content: "\f0de";
+				width: $base-size*10;
+				height: $base-size*10;
+				font-family: FontAwesome;
+				position: absolute;
+				top: $base-size*-10;
+				left: $base-size*4;
+				color: $white;
+				font-size: $base-size*16;
+			}
+		}
+
+		.dropdown-menu.nav-3{
+			background: $white!important;
+			width: 40%;
+			position: absolute;
+			top: $base-size*20;
+			left: 46%;
+			margin-left: $base-size*25;
+			
+			button {
+				color: #000;
+				font-size: $base-size*7;
+				text-align: left;
+			}
+		
+			&::after {
+				content: "\f0de";
+				width: $base-size*10;
+				height: $base-size*10;
+				font-family: FontAwesome;
+				position: absolute;
+				top: $base-size*-10;
+				left: $base-size*4;
+				color: $white;
+				font-size: $base-size*16;
+			}
+		}
+
+		.dropdown-menu.nav-4{
+			background: $white!important;
+			width: 40%;
+			position: absolute;
+			top: $base-size*20;
+			left: 60%;
+			margin-left: $base-size*2;
+			
+			button {
+				color: #000;
+				font-size: $base-size*7;
+				text-align: left;
+			}
+		
+			&::after {
+				content: "\f0de";
+				width: $base-size*10;
+				height: $base-size*10;
+				font-family: FontAwesome;
+				position: absolute;
+				top: $base-size*-10;
+				left: $base-size*4;
+				color: $white;
+				font-size: $base-size*16;
+			}
+		}
+
+		.search {
+			line-height: normal;
+			position: relative;
+			top: $base-size*-2;
+
+			.form-control {
+				display: inline-block;
+				width: auto;
+				color: black;
+				font-size: $base-size*6;
+				vertical-align: middle;
+				background: $white;
+				border: none;
+				height: $base-size*14;
+				border-radius: $base-size*2;
+			}
+			input.form-control:focus {
+				outline: none!important;
+				box-shadow: none;
+			}
+
+			::placeholder {
+				color: #b6b6b6;
+			}
+			
+			button {
+				font-size: $base-size*10;
+				padding: 0px 0px 0px 0px;
+				border-radius: $base-size*2;
+				color: $white;
+				cursor: pointer;
+			}
+		}
+	}
+	
+	@media screen and (min-width: 992px) {
+	.navbar {
+		padding:0;
+
+		.nav-item {
+			padding:0;
+			margin:0 ;
+		  }
+
+		  .dropdown {
+			position:static;
+			padding-left: $base-size*30;
+
+			a {
+				color: $white!important;
+			}
+
+			i {
+				padding: 0 $base-size*5 0 0;
+				color: $white;
+			}
+		   }
+
+		   .dropdown-menu {
+			width:100%;
+			left:0;
+			right:0;
+			top:$base-size*22.5;
+		  }
+		  .dropdown:hover {
+
+			.dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+				display:block!important;
+			  }
+		  }
+		}
+	}
+
+}
+
+
+
+/********************************
+	Header Footer
+********************************/
+.header-footer {
+	background: $them-color;
+	min-height: $base-size*50;
+
+	h2 {
+		font-size: $base-size*10;
+		padding: $base-size*10 0 0 0;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		font-size: $base-size*8;
+		color: $white;
+		padding: $base-size*8 0 0 0;
+	}
+
+	.settings {
+		width: $base-size*60;
+		background: $white;
+		border-radius: $base-size*15;
+		float: right;
+		margin-top: $base-size*16;
+		cursor: pointer;
+
+		h4 {
+			font-size: $base-size*9;
+			text-align: center;
+			color: #888;
+			line-height: $base-size*20;
+		}
+
+		ul {
+			width: 30%;
+			visibility: hidden;
+			opacity: 0;
+			transition: visibility 0s, opacity 0.5s linear;
+			background: $white;
+			border-radius: $base-size*3;
+			@include box-shadow($base-size*1, 0px, $base-size*5, 0 rgb(185, 185, 185));
+			position: absolute;
+			top: $base-size*38;
+			right: $base-size*11;
+			z-index: 2;
+
+			::after {
+				content: '\f0de';
+				font-family: FontAwesome;
+				font-size: $base-size*13;
+				position: absolute;
+				top: $base-size*-5;
+				right: $base-size*2;
+				color: $white;				
+			}
+	
+			li {		
+				line-height: $base-size*16;
+	
+				button {
+					width: 100%;
+					font-size: $base-size*8;	
+					text-align: justify;
+					padding-left: $base-size*12;
+	
+					i {
+						color: black;
+						padding: 0 $base-size*10 0 $base-size*7;
+					}
+	
+					&:hover {
+						background: $hover;
+					}
+				}
+			}
+		}
+
+		&:hover  ul {
+			visibility: visible;
+			opacity: 1;
+		  }
+
+		  i {
+			  padding: $base-size*4;
+			  font-size: $base-size*8;
+			  color: #888;
+		  }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////
+  Responsive  MEDIAQUERIES CSS
+/////////////////////////////////*/
+
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 297px) and (max-width: 575.98px) { 
+	.header-top {
+		min-height: 6rem;
+
+		.profile {
+			left: 50%;
+			margin-left: $base-size*-45;
+		}	
+		.profile-arrow {
+			right: $base-size*0;
+
+			img {
+				right: $base-size*52;
+			}
+			ul {
+				width: 50%;
+				right: $base-size*50;
+			}
+		}
+	}
+	.county-list {
+		.county-arrow {
+			width: 94%!important;
+			z-index: 2;
+
+			ul {
+				left: $base-size*-7!important;
+			}
+		}
+}
+
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {  
+
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+
+}

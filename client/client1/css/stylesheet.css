@@ -1,0 +1,228 @@
+
+
+body {margin:0px; padding:0px; font-family: 'Raleway', sans-serif;}
+
+.video_selector { position:fixed; right:0; bottom:0; min-width:100%; min-height:0; width:auto;   z-index:-999;}
+.wrapper {width:100%;}
+.header { width:100%; margin:0 auto;}
+.header_main { width:100%; margin:0 auto; display:inline-block;}
+.header_logo { width:100%; max-width:1250px; margin:0% auto 0; }
+.header_nav { background-color:#3db2e1; width:100%; }
+.header_nav_cont { width:100%; max-width:1250px; margin:0 auto; padding: 10px;}
+.header_nav_cont ul { list-style-type:none;}
+.header_nav_cont ul li { display:inline-block; color:#000; padding:5px 0 0 5px;  font-size:25px;}
+.header_respon { width:75%; margin:0 auto; }
+.content { width:100%; margin:0 auto;}
+.content_main1 { width:100%;   margin: 0px auto 0; background-image:url(images/sss.jpg); background-repeat:no-repeat; padding-bottom:0%; }
+.content_main2 { width:100%; max-width:1380px;  margin: 0% auto 0;  padding-bottom:2%; }
+.content_main_left_div { width:100%; max-width:1000px; margin:0 auto; background-color: #fff;}
+.content_main_left {width:100%; max-width:1000px;  margin: 0 auto 0 0%; border:solid 1px #CCCCCC;}
+
+.menu_main { width:100%; max-width:1250px; margin:2% auto 0;}
+.menu_img { width:45%; float:left; margin:0 auto;}
+.menu_img2 { width:45%; float:right; margin:0 auto;}
+.demo1 {  width:45%; margin:4% auto 0; background-image:url(../images/demo.png); background-repeat:no-repeat;  border-radius:5px; height:80px; }
+.demo1:hover { background-image:url(../images/demo2.png);}
+
+.down {  width:49%; margin:3% auto 0; }
+
+.ptxt_2 { width:100%; font-size:24px; padding:15px; text-align:center; background-image:url(../images/downbut.png); background-repeat:no-repeat; background-color:transparent; height:80px;
+cursor: pointer; border: none;}
+.ptxt_2:hover { background-image:url(../images/downbut2.png);}
+.ptxt_3 { line-height:30px; text-align:justify;}
+
+a {text-decoration:none;}
+.icon li {background-image: url("images/icon.jpg");background-repeat: no-repeat;line-height: 27px;list-style: outside none none; padding-left: 40px; font-family:'MyriadProRegular'; background-position: 0% 58%; color:#000; }
+ul{padding-left:4px; padding-top: 15px;}
+.content_main_left2 {width:99%; max-width:645px;  margin: 5% auto 0 0%; border:solid 1px #CCCCCC;}
+.content_main_left3 {width:99%; max-width:645px;  margin: 5% auto 0 0%; border:solid 1px #CCCCCC;}
+.content_main_right { width:100%; max-width:340px;  margin: 0 auto ; border:solid 1px #CCCCCC;}
+.content_main_right_div { width:100%; max-width:340px;  margin:0 auto;}
+.content_main_right2 { width:100%; max-width:340px;  margin: 8% auto ; border:solid 1px #CCCCCC;}
+.style{ font-size:45px; color:#fff; margin:0 auto; padding:8px; text-align:center; text-shadow: 2px 4px 4px;}
+.style2 {text-align:justify; font-size:14px; padding:10px; line-height:24px;}
+.style3 { text-align:right; font-size:12px; color:#F00; margin-right:5%;}
+.style4 {text-align:center; font-size:12px; color:#Fff; }
+.style5 {font-size:30px; margin:0 auto;  padding-left: 2%; color:#ff2d21;}
+.style6 { text-align:left; font-size:14px; color:#000; padding:0 0 0 3%;}
+.style7 {font-size:25px; margin:0 auto;  padding-left: 2%; color:#ff2d21;}
+.footer { width:100%; margin:0 auto;}
+.footer_bott { width:100%; background-color:#000; padding:8px 0px;}
+
+.content_logo_inner { width:100%; max-width:1250px; margin:0% auto 0; position:relative; z-index:10000;}
+.content_logo { width:100%; margin:0 auto;}
+.logo1 { width:25%; float:left; margin:0 auto; text-align:center;}
+.content_logo_2 { width:100%; margin:2% auto 0;}
+.content_logo img {box-shadow: 1px 2px 6px black;}
+.content_logo_2 img { box-shadow: 1px 2px 6px black;}
+.portfolio_main { width:100%; max-width:1000px; text-align:center; margin:0 auto;}
+.portfolio_main_left { width:45%; float:left; margin:0 auto;}
+.portfolio_main_right { width:45%; float:right; margin:0 auto;}
+.inlogo { width:23%; margin:0 auto; float:left; padding:10px;}
+
+
+
+ ul.enlarge{
+    list-style-type:none; /*remove the bullet point*/
+    margin-left:0;
+    }
+    ul.enlarge li{
+    display:inline-block; /*places the images in a line*/
+    position: relative;
+    z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+    margin:10px 40px 0 20px;
+    }
+    
+    ul.enlarge span{
+    position:absolute;
+    left: -9999px;
+    background-color:#eae9d4;
+    padding: 10px;
+    font-family: 'Droid Sans', sans-serif;
+    font-size:.9em;
+    text-align: center;
+    color: #495a62;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+    box-shadow: 0 0 20px rgba(0,0,0, .75);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius:8px;
+    }
+    ul.enlarge li:hover{
+    z-index: 50;
+    cursor:pointer;
+    }
+    ul.enlarge span img{
+    padding:2px;
+    background:#ccc;
+    }
+    ul.enlarge li:hover span{
+    top: -300px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+    left: -20px; /*distance from the left of the thumbnail to the left of the popup image*/
+    }
+    ul.enlarge li:hover:nth-child(2) span{
+    left: -100px;
+    }
+    ul.enlarge li:hover:nth-child(3) span{
+    left: -200px;
+    }
+    /**IE Hacks - see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+    ul.enlarge img, ul.enlarge span{
+    behavior: url(pie/PIE.htc);
+    }
+
+
+
+
+@media screen and (max-width:1024px) {
+.menu_img { width: 58%; float: none; margin: 0 auto;}
+.menu_img2 {  width: 57%; float: none; margin: 0 auto;}
+#experiment:hover #background  {	height: 1583px;}
+.header_logo {  width: 35%; margin: 1% auto 16px;}
+.logo1 {
+    width: 33%;
+    float: none; margin:0 auto;}
+
+@media screen and (max-width:980px) {
+.header_logo { width:30%; margin:0 auto; display:table;}
+
+.content { width: 100%;}
+.content_main_left_div {max-width: 565px;}
+.content_main { margin: 0 3% 0 auto; width: 97%;}
+.content_main {  margin: 2% auto 0;}
+#experiment:hover #background  {	height: 1555px;}
+}
+
+@media screen and (max-width:800px){
+	ul.enlarge li:hover span {
+    top: 6%;
+    left: -10%;
+    right: -8%;}
+.menu_img { width: 72%;}
+.menu_img2 { width: 70%;}
+.header_logo{text-align:center;width:100%;margin:0 auto}
+.content_main_left_div { max-width: 663px;float: none;}
+#experiment:hover #background  {height: 1700px;}
+.content_main_right_div {
+    float: none;
+    margin: 20px auto 0;}
+.logo1 {
+    width: 48%;}
+}	
+}
+
+@media screen and (max-width:768px){
+.header_logo { margin: 0 auto 0 0%;	}
+.menu_img { width: 75%;}
+.menu_img2 { width: 75%;}
+.logo1 {
+    width: 48%;}}
+
+@media screen and (max-width:698px){
+
+.logo1 {
+    width: 48%;}
+}
+
+}
+
+@media screen and (max-width:640px){
+.header_logo {margin: 0 auto 0 0%; }
+.content_main {margin: 0 auto  ; margin-top:20px;}
+.content_main_left {
+    border: 1px solid #cccccc;
+    margin: 0 auto 0 0;
+    max-width: 645px;
+    width: 99%;}
+.menu_img { width: 90%;}
+.menu_img2 { width: 90%;}
+.logo1 {
+    width: 54%;}
+
+
+}
+@media screen and (max-width:484px){
+ul.enlarge li {margin: 0px 0px 0 21px;}
+.logo1 {
+    width: 69%;}
+}
+@media screen and (max-width:480px){
+.content_main { margin: 0 0 0 -2%; width: 97%;}
+.header_logo {margin: 0 auto 0 0%;width: 100%;}
+.content_main {  margin:0 auto 0; margin-top:25px;}
+.menu_img { width: 100%;}
+.menu_img2 { width: 100%;}
+.demo1 { height:69px;}
+#experiment:hover #background  {height: 1683px;}
+.logo1 {
+    width: 74%;}
+}
+@media screen and (max-width:380px){
+ul.enlarge li {margin: 0px 23px 0 21px;}
+.logo1 {
+    width: 86%;
+}
+}
+
+@media screen and (max-width:360px){
+
+.content_main_right2 {margin: 8% auto 8% 0%;}
+.content_main_right {margin: 0 auto 0 0%;}
+#experiment:hover #background  {height: 1753px;}
+.logo1 {  width: 100%;}	
+ul.enlarge li:hover span { top: -226px;  left: 0px;}
+ul.enlarge li { margin: 0px 24px 0 20px;
+}
+}
+
+
+@media screen and (max-width:320px){
+.content_main_right_div {margin: 5% auto 0 0%;}
+.image { margin-left:6%; margin-bottom: 4%;}
+.header_logo {margin: 0 auto 0 0%;width: 100%;}
+#experiment:hover #background  {height: 1818px;}
+ul.enlarge li {
+    margin: 0px 0px 0 0px;
+}
+}

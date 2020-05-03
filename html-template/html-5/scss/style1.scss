@@ -1,0 +1,11 @@
+@import '_variables.scss';
+@import '_gradients.scss';
+@import 'base/base';
+
+h1 {
+	/* (2.5rem = 40px) */
+	color: $text-primary;
+	margin-bottom:0;
+	font-size: $base-size*32;
+
+}

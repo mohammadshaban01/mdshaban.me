@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Solid / Tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 Z M15.3141427,8.79289322 L10.0212495,14.0857864 L8.20710678,12.2716438 C7.81658249,11.8811195 7.18341751,11.8811195 6.79289322,12.2716438 C6.40236893,12.6621681 6.40236893,13.295333 6.79289322,13.6858573 L9.31414268,16.2071068 C9.70466697,16.5976311 10.3378319,16.5976311 10.7283562,16.2071068 L16.7283562,10.2071068 C17.1188805,9.81658249 17.1188805,9.18341751 16.7283562,8.79289322 C16.3378319,8.40236893 15.704667,8.40236893 15.3141427,8.79289322 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Solid-/-Tick" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="tick" fill="#022047" xlink:href="#path-1"></use>
+        <g id="Color-/-Black-/-Black-800" mask="url(#mask-2)" fill="#182C4F">
+            <polygon id="Black-/-Black-800" points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+</svg>

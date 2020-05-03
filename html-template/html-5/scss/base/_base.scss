@@ -1,0 +1,21 @@
+//
+// Base setting
+//
+
+$base-size:0.125rem;
+$base-spacing:1.5rem;
+$base-font-size:1rem;
+$base-line-height:$base-spacing;
+
+// Font Size
+$font-weight-light:300;
+$font-weight-regular:400;
+$font-weight-semi-bold:600;
+
+// Header Size
+$header-size-1: $base-font-size * 1.5;
+$header-size-2: $base-font-size * 0.875;
+$header-size-3: $base-font-size * 0.75;
+$header-size-4: $base-font-size * 0.875;
+$header-size-5: $base-font-size         ;
+$header-size-6: $base-font-size * 0.75;

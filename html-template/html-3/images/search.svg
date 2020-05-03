@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Line / Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.78658527,16.3901715 C6.16862629,16.3901715 3.23588681,13.4466136 3.23588681,9.81530863 C3.23588681,6.18400363 6.16862629,3.23919534 9.78658527,3.23919534 C13.4045443,3.23919534 16.3372837,6.18400363 16.3372837,9.81530863 C16.3372837,13.4466136 13.4045443,16.3901715 9.78658527,16.3901715 M21.8177939,20.9330541 L15.7641911,14.819607 C16.8929345,13.4641199 17.5731705,11.719743 17.5731705,9.81530863 C17.5731705,5.49875737 14.087272,2 9.78658527,2 C5.48589849,2 2,5.49875737 2,9.81530863 C2,14.1306094 5.48589849,17.6306173 9.78658527,17.6306173 C11.7400838,17.6306173 13.5216545,16.9028557 14.8883559,15.709927 L20.9369754,21.8171218 C21.1799168,22.0609594 21.5748524,22.0609594 21.8177939,21.8171218 C22.0607354,21.5732841 22.0607354,21.1768917 21.8177939,20.9330541" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Line-/-Search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Search" fill="#0A1F44" xlink:href="#path-1"></use>
+        <g id="Color-/-Black-/-Black-800-/-Outline" mask="url(#mask-2)" stroke="#182C4F">
+            <polygon id="Black-/-Black-800" points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+</svg>

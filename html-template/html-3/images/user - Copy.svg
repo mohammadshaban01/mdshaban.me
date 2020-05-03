@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Solid / User</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21,21 L3,21 C3,16.275 6.48532777,14 12,14 C17.5146722,14 21,16.275 21,21 Z M12,12 C9.8,12 8,10.2 8,8 C8,5.8 9.8,4 12,4 C14.2,4 16,5.8 16,8 C16,10.2 14.2,12 12,12 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Solid-/-User" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="user" fill="#0A1F44" xlink:href="#path-1"></use>
+        <g id="Color-/-Black-/-Black-800" mask="url(#mask-2)" fill="#182C4F">
+            <polygon id="Black-/-Black-800" points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+</svg>

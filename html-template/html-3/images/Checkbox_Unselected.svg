@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Line / Checkbox_Unselected</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.63157895,4 C4.28276753,4 4,4.28276753 4,4.63157895 L4,19.3684211 C4,19.7172325 4.28276753,20 4.63157895,20 L19.3684211,20 C19.7172325,20 20,19.7172325 20,19.3684211 L20,4.63157895 C20,4.28276753 19.7172325,4 19.3684211,4 L4.63157895,4 Z M5,2 L19,2 C20.6568542,2 22,3.34314575 22,5 L22,19 C22,20.6568542 20.6568542,22 19,22 L5,22 C3.34314575,22 2,20.6568542 2,19 L2,5 C2,3.34314575 3.34314575,2 5,2 Z" id="path-1"></path>
+    </defs>
+    <g id="Icon-/-Line-/-Checkbox_Unselected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Checkbox_Unselected" fill="#0A1F44" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <g id="Color-/-Black-/-Black-800" mask="url(#mask-2)" fill="#182C4F">
+            <polygon id="Black-/-Black-800" points="0 0 24 0 24 24 0 24"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Reating</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+   <!-- Start Top Bar -->
+<div class="top-bar">
+  <div class="logo">
+      <img src="images/sg-logo.svg" alt="Sgacito logo">
+  </div>       
+  
+  <div class="profile-main">
+      <div class="nav-bar-icon clearfix">
+          <button><img src="images/chat.svg" alt="Chat"></button>
+          <button><img src="images/Notification_Unselected.svg" alt="Notification Unselected"></button>
+      </div>
+          
+      <div class="top-nav">
+          <div class="profile">
+              <img src="images/3.jpg" alt="Profile Image">
+          </div>
+      </div>
+      <div class="profile-email">
+          <div class="email">Ajay.tiwari@abpnews.com </div>
+          <button><span class="arrow-down"></span></button>
+      </div>
+  </div>
+ 
+</div>
+<!-- End Top Bar -->
+
+            <!--Start side Bar -->
+      
+            <div class="side-bar">
+              <div class="container">
+                  <div class="row">
+                      <input type="checkbox" name="toggle" id="toggle" (click)="toggleContainer()"/>
+                      <label for="toggle">
+                          <img alt="Menu" src="images/menu.svg">
+                      </label>
+                      <!-- <div class="overlay"></div> -->
+                      <div class="message">
+                          <div class="side-bar-list">
+                               <div class="client-branding">
+                                  <ul>
+                                      <li>
+                                          <button><img src="images/logo-abp.svg" alt="Menu">ABP</button>
+                                      </li>
+                                      <li>
+                                          <div class="your-products">
+                                              <form class="form-group">X
+                                                      <input matInput placeholder="Your Products" value="">
+                                                      <button><img src="images/setting.svg" alt="Setting"></button>x
+                                              </form>
+                                          </div>
+                                      </li>
+                                      <li>
+                                          <button><img src="images/user.svg" alt="User"></button>
+                                      </li>
+                                      <li>
+                                          <button><img src="images/home.svg" alt="User"></button>
+                                      </li>
+                                  </ul>
+                              </div>
+      
+                          <div class="logout">
+                              <div class="rating">
+                                  <button><img src="images/rev-x -white.svg" alt="REV X"></button>
+                              </div>
+                          </div>
+                          
+                          <!-- <div>
+                          <button  (click)="logout()">Logout</button>
+                          </div> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--End side Bar -->
+      
+          <!-- Left Bar -->
+        <div class="row">
+            <div class="col">
+                <div class="left-bar">
+                    <div class="left-list">
+                        <button><img src="images/logo-abp.svg" alt="Menu"></button>
+                        <button><img src="images/setting.svg" alt="Setting"></button>
+                        <button><img src="images/user.svg" alt="User"></button>
+                        <button><img src="images/home.svg" alt="Home"></button>
+                    </div>
+                    <div class="product-gallery">
+                        <button><img src="images/product-gallery.svg" alt="Home"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="wrapper1">
+<div class="container-fluid ">
+    <div class="row m-t-75">
+            <div class="filter-bar">
+            <div class="filter-list"><button><img src="images/filter.svg" alt="Fliter"></button></div>
+            <div class="filter-list"><button><img src="images/Plus.svg" alt="Puls"></button></div>
+            <div class="filter-list"><button><img src="images/search.svg" alt="Search"></button></div>
+        </div>
+    </div>
+    
+    <div class="row m-t-10">
+        <div class="col-md-12 p-r-0">
+            <div class="card">
+                <div class="rating-configurator">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>ORGANISATION : ABP NEWS PVT. LTD.</h1>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="arrow-img">
+                            <button><img src="images/edit.svg" alt="Edit"></button>
+                        </div>
+                        </div>
+                        <div class="border-line"></div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="organisation">
+                                <div class="organisation-list"><h3>Type</h3></div>
+                                <div class="organisation-list"><h4>TV</h4></div>
+                            </div>
+                            <div class="organisation">
+                                <div class="organisation-list"><h3>Website</h3></div>
+                                <div class="organisation-list"><h4>www.abpnews.in</h4></div>
+                            </div>
+                            <div class="organisation">
+                                <div class="organisation-list"><h3>Head Address</h3></div>
+                                <div class="organisation-list text-primary"><h4>Sect 60, Noida (UP)</h4></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="organisation">
+                                <div class="organisation-list"><h3>Products</h3></div>
+                                <div class="organisation-list"><h4>RevX, Rating Configurator</h4></div>
+                            </div>
+                            <div class="organisation">
+                                <div class="organisation-list"><h3>Contact Person</h3></div>
+                                <div class="organisation-list text-primary"><h4>Pranav Kumar</h4></div>
+                            </div>
+                            <div class="organisation">
+                                <div class="organisation-list"><h3>Regional Office</h3></div>
+                                <div class="organisation-list text-primary"><h4>Hauz Khas, Delhi</h4></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="organisation">
+                                <div class="organisation-list"><h3>Email Id</h3></div>
+                                <div class="organisation-list"><h4>abpnews.in</h4></div>
+                            </div>
+                            <div class="organisation">
+                                <div class="organisation-list"><h3>Contact Number</h3></div>
+                                <div class="organisation-list text-primary"><h4>+91-9999999999</h4></div>
+                            </div>
+                            <div class="organisation">
+                                <div class="organisation-list"><h3>Financial Year</h3></div>
+                                <div class="organisation-list text-primary"><h4>April 2018</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="filter-bar m-t-20 m-b-9">
+            <div class="select-main">
+                <label>
+                    <select>
+                        <option selected>Genre</option>
+                        <option>Genre 1</option>
+                        <option>Genre 2</option>
+                        <option>Genre 3</option>
+                        <option>Genre 4</option>
+                    </select>
+                </label>
+            </div>
+            <div class="filter-list m-t-20"><button><img src="images/edit.svg" alt="Edit"></button></div>
+            <div class="filter-list m-t-20"><button><img src="images/Plus.svg" alt="Puls"></button></div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12 p-r-0">
+            <div class="card">
+                <div class="rating-table">
+                    <div class="table-responsive">          
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Channel</th>
+                                <th>Sub Genre</th>
+                                <th>Live Hrs</th>
+                                <th>Day Part</th>
+                                <th>Day Part 2</th>
+                                <th>Week Part</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><mat-checkbox></mat-checkbox></td>
+                                <td>Channel 1</td>
+                                <td>Sub Genre 2</td>
+                                <td>Sub Genre 2</td>
+                                <td>Sub Genre 2</td>
+                                <td>Sub Genre 2</td>
+                                <td>Sub Genre 2</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
