@@ -3498,15 +3498,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-a {
-  color: #ffffff !important; }
-  a:hover {
-    outline: none;
-    text-decoration: none;
-    color: #000 !important; }
-  a:focus {
-    outline: none;
-    text-decoration: none; }
+a:hover {
+  outline: none;
+  text-decoration: none;
+  color: #000 !important; }
+a:focus {
+  outline: none;
+  text-decoration: none; }
 
 /* Padding left & right None */
 .p-r-n {
