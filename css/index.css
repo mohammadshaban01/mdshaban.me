@@ -34,7 +34,8 @@
   background: #000; }
   .btn-green:hover {
     background: transparent;
-    border: 1px solid #000; }
+    border: 1px solid #000;
+    color: #000; }
 
 #background-wrap {
   bottom: 0;
@@ -398,7 +399,8 @@
     margin-top: 3.125rem; }
     .recents-work .read-more.btn:hover {
       background: transparent;
-      border: 1px solid #000; }
+      border: 1px solid #000;
+      color: #000; }
 
 .freelance-work {
   margin: 2.5rem auto;
@@ -468,7 +470,8 @@
   background: #000; }
   .say-hello .read-more.btn:hover {
     background: transparent;
-    border: 1px solid #000; }
+    border: 1px solid #000;
+    color: #000; }
 
 .footer-main {
   margin: 0 auto;

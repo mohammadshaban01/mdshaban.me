@@ -39,7 +39,8 @@
   background: #000; }
   .btn-green:hover {
     background: transparent;
-    border: 1px solid #000; }
+    border: 1px solid #000;
+    color: #000; }
 
 #background-wrap {
   bottom: 0;
@@ -256,7 +257,8 @@
   background: #000; }
   .btn-green:hover {
     background: transparent;
-    border: 1px solid #000; }
+    border: 1px solid #000;
+    color: #000; }
 
 #background-wrap {
   bottom: 0;
@@ -3496,12 +3498,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-a:hover {
-  outline: none;
-  text-decoration: none; }
-a:focus {
-  outline: none;
-  text-decoration: none; }
+a {
+  color: #ffffff !important; }
+  a:hover {
+    outline: none;
+    text-decoration: none;
+    color: #000 !important; }
+  a:focus {
+    outline: none;
+    text-decoration: none; }
 
 /* Padding left & right None */
 .p-r-n {
@@ -3777,6 +3782,35 @@ body {
       height: auto;
       margin: 0.625rem auto; }
 
+.my-service {
+  background: #f8f8f8;
+  margin: 2.5rem 0;
+  padding: 1.25rem 0 2.5rem 0; }
+  .my-service h2 {
+    font-size: 1.5rem;
+    margin: 1rem auto; }
+  .my-service h3 {
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 0 0.875rem;
+    line-height: 1.5rem;
+    margin: 1rem auto; }
+  .my-service h4 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1.25rem; }
+  .my-service p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 1.25rem; }
+  .my-service .service-img {
+    text-align: center;
+    padding: 3.5rem 0 1rem 0;
+    min-height: 10.875rem; }
+
 .recents-work {
   margin: 2.5rem auto;
   padding-bottom: 6.25rem; }
@@ -3792,13 +3826,15 @@ body {
   .recents-work .read-more.btn {
     width: 25%;
     background: #000;
+    color: white;
     position: absolute;
     left: 50%;
     margin-left: -170px;
     margin-top: 3.125rem; }
     .recents-work .read-more.btn:hover {
       background: transparent;
-      border: 1px solid #000; }
+      border: 1px solid #000;
+      color: #000; }
 
 .freelance-work {
   margin: 2.5rem auto;
@@ -3868,7 +3904,8 @@ body {
   background: #000; }
   .say-hello .read-more.btn:hover {
     background: transparent;
-    border: 1px solid #000; }
+    border: 1px solid #000;
+    color: #000; }
 
 .footer-main {
   margin: 0 auto;

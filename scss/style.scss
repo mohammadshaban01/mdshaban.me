@@ -94,9 +94,11 @@ table {
 }
 
 a {
+	color: #ffffff!important;
 	&:hover {
 		outline:none;
 		text-decoration:none;
+		color: $black!important;
 	}
 	&:focus {
 		outline:none;
@@ -479,7 +481,51 @@ body {
 		}
 	}
 }
-	
+
+// My Service
+.my-service {
+	background: $gray;
+	margin: $base-font-size *10  0;
+	padding: $base-font-size *5  0 $base-size*20 0;
+
+	h2 {
+		font-size: $base-size *12;
+		margin: $base-spacing *8 auto;
+	}
+
+	h3 {
+		font-size: $base-size *7;
+		text-align: center;
+		padding: 0 $base-size*7;
+		line-height: $base-size*12;
+		margin: $base-spacing *8 auto;
+
+	}
+
+	h4 {
+		font-size: $base-font-size *10;
+		font-weight: $font-weight-extra-bold;
+		text-align: center;
+		text-transform: capitalize;
+		margin-bottom: $base-spacing *10;
+	}
+
+	p{
+		font-size: $base-size*7;
+		font-weight: 500;
+		text-align: center;
+		padding-bottom: $base-size*10;
+	}
+	.service-img{
+		text-align: center;
+		padding:  $base-size*28 0 $base-size*8 0;
+		min-height: $base-size*87;
+
+		img {
+			
+		}
+	}
+}
 // recents-work
 .recents-work {
 	margin: $base-spacing *20 auto;
@@ -497,10 +543,12 @@ body {
 	.read-more.btn {
 		width: 25%;
 		@include button-bg($black);
+		color: $white;
 		position: absolute;
 		left: 50%;
 		margin-left: -170px;
-		margin-top: $base-spacing *25;		
+		margin-top: $base-spacing *25;	
+		
 	}
 }
 
